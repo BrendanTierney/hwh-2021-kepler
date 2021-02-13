@@ -9,5 +9,3 @@ Subrahmanyan Chandrasekhar - COntribution to the study of evolution of stars
 Hiranya Peiris - received the Breakthrough Prize in Fundamental Physics in 2018 for their "detailed maps of the early universe."
 Ahmed Zewail - Father of femtochemistry
 
-
-
