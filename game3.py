@@ -1,3 +1,15 @@
+##Image credits
+#https://en.wikipedia.org/wiki/File:Donna_Strickland_EM1B5760_(46183560632)_(cropped).jpg
+#https://www.imperial.ac.uk/mechanical-engineering/people/meet-our-alumni/dr-maggie-aderin-pocock/
+#https://www.ethiojobs.net/blog/kitaw-ejigu-was-one-of-ethiopias-first-aerospace-scientists/
+#https://www.britannica.com/biography/Subrahmanyan-Chandrasekhar
+#https://www.simonsfoundation.org/people/hiranya-peiris/
+#https://en.wikipedia.org/wiki/File:Ahmed_Zewail_HD2009_Othmer_Gold_Medal_portrait.JPG
+#https://en.wikipedia.org/wiki/File:Dorothy_Vaughan_2.jpg
+#https://en.wikipedia.org/wiki/File:Katie_Bouman_answers_questions_about_the_Event_Horizon_Telescope_project.jpg
+
+
+
 import pygame
 import random
 import math
@@ -7,7 +19,7 @@ height = 700
 
 pygame.init()
 gameDisplay = pygame.display.set_mode((width,height))
-pygame.display.set_caption('Game name')
+pygame.display.set_caption('card match')
 
 white = (255, 255, 255)
 black = (0,0,0)
@@ -20,7 +32,7 @@ clock = pygame.time.Clock()
 
 #Enter filename of picture card followed by that persons description in a jpeg
 #these must be in the correct order
-cardPairs = ["0.jpeg","0.jpeg","1.jpeg","1.jpeg","2.jpeg","2.jpeg","3.jpeg","3.jpeg","4.jpeg","4.jpeg","5.jpeg","5.jpeg","6.jpeg","6.jpeg","7.jpeg","7.jpeg"]
+cardPairs = ["0.jpeg","0text.jpeg","1.jpeg","1text.jpeg","2.jpeg","2text.jpeg","3.jpeg","3text.jpeg","4.jpeg","4text.jpeg","5.jpeg","5text.jpeg","6.jpeg","6text.jpeg","7.jpeg","7text.jpeg"]
 
 #SWAPCARDS 2D List of 16 zeros
 #first part is filename, second part is the pair number x in {x; 0<=x<=8}, third part is True/False if it has been correctly matched yet
@@ -170,7 +182,7 @@ for i in range(len(frontCards)):  # Loads all the cards with their coords onto t
 pygame.display.update()
 
 ##Wait for 60 seconds before closing
-pygame.time.wait(60000)
+pygame.time.wait(30000)
 
 pygame.quit()
 quit()
